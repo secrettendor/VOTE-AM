@@ -92,15 +92,6 @@ function showContent(n){
   setInterval(()=>wm.style.transform=`rotate(${Math.random()*10-5}deg)`,3000);
 }
 
-// ------------------ CHANGE NAME ------------------
-function changeName(){
-  localStorage.removeItem("loggedIn");
-  localStorage.removeItem("loggedName");
-  document.getElementById("content").style.display="none";
-  document.getElementById("login").style.display="flex";
-  document.getElementById("name").value="";
-}
-
 // ------------------ AUTO LOGIN ------------------
 const loggedIn = localStorage.getItem("loggedIn");
 const savedName = localStorage.getItem("loggedName");
